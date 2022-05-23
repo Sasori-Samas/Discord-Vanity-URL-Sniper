@@ -20,7 +20,7 @@ module.exports = client;
 
 
 
-client.login(config.TOKEN).catch(e => {
+client.login(process.env.TOKEN).catch(e => {
   console.log("Invalid Bot Token or Token is Empty or Close Your Bot Intents!");
 })
 
